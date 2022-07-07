@@ -24,6 +24,8 @@
 		2662E6952867C128008787CB /* InformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2662E6932867C128008787CB /* InformationViewController.xib */; };
 		2662E69E2867CD74008787CB /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2662E69C2867CD74008787CB /* CategoriesViewController.swift */; };
 		2662E69F2867CD74008787CB /* CategoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2662E69D2867CD74008787CB /* CategoriesViewController.xib */; };
+		26D343482877811300960CC3 /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D343472877811300960CC3 /* CategoriesViewModel.swift */; };
+		26D3434A287784AD00960CC3 /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D34349287784AD00960CC3 /* QuestionViewModel.swift */; };
 		F139804D1B1DFBD84705BBA5 /* Pods_Trivia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 622F5A5B884104C59E99D219 /* Pods_Trivia.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,8 @@
 		2662E6932867C128008787CB /* InformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationViewController.xib; sourceTree = "<group>"; };
 		2662E69C2867CD74008787CB /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		2662E69D2867CD74008787CB /* CategoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesViewController.xib; sourceTree = "<group>"; };
+		26D343472877811300960CC3 /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
+		26D34349287784AD00960CC3 /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
 		3E96C8A772234367AFF3D1B8 /* Pods-Trivia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trivia.release.xcconfig"; path = "Target Support Files/Pods-Trivia/Pods-Trivia.release.xcconfig"; sourceTree = "<group>"; };
 		622F5A5B884104C59E99D219 /* Pods_Trivia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trivia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05E577A04FF2364E72C6921 /* Pods-Trivia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trivia.debug.xcconfig"; path = "Target Support Files/Pods-Trivia/Pods-Trivia.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,7 +120,7 @@
 				26422C9F2868A2E50093EC3F /* Services */,
 				26422CA22868A3BA0093EC3F /* Model */,
 				2662E6962867C546008787CB /* View */,
-				2662E6972867C780008787CB /* Controller */,
+				26D34346287780F700960CC3 /* ViewModel */,
 				2662E6832867BEEB008787CB /* Assets.xcassets */,
 				2662E6852867BEEB008787CB /* LaunchScreen.storyboard */,
 				2662E6882867BEEB008787CB /* Info.plist */,
@@ -128,23 +132,25 @@
 			isa = PBXGroup;
 			children = (
 				2662E68F2867BF49008787CB /* InitialViewController.xib */,
+				2662E68E2867BF49008787CB /* InitialViewController.swift */,
 				2662E6932867C128008787CB /* InformationViewController.xib */,
+				2662E6922867C128008787CB /* InformationViewController.swift */,
 				2662E69D2867CD74008787CB /* CategoriesViewController.xib */,
+				2662E69C2867CD74008787CB /* CategoriesViewController.swift */,
 				26422CA62868AD020093EC3F /* QuestionViewController.xib */,
+				26422CA52868AD020093EC3F /* QuestionViewController.swift */,
+				26422CAD2868F96B0093EC3F /* TabBarController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		2662E6972867C780008787CB /* Controller */ = {
+		26D34346287780F700960CC3 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				2662E68E2867BF49008787CB /* InitialViewController.swift */,
-				2662E6922867C128008787CB /* InformationViewController.swift */,
-				2662E69C2867CD74008787CB /* CategoriesViewController.swift */,
-				26422CA52868AD020093EC3F /* QuestionViewController.swift */,
-				26422CAD2868F96B0093EC3F /* TabBarController.swift */,
+				26D343472877811300960CC3 /* CategoriesViewModel.swift */,
+				26D34349287784AD00960CC3 /* QuestionViewModel.swift */,
 			);
-			path = Controller;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		3FD31B25C60C112C26C48406 /* Pods */ = {
@@ -284,6 +290,8 @@
 				26422CA12868A2FC0093EC3F /* CategoriesService.swift in Sources */,
 				26422CAA2868C6710093EC3F /* QuestionService.swift in Sources */,
 				26422CA72868AD020093EC3F /* QuestionViewController.swift in Sources */,
+				26D3434A287784AD00960CC3 /* QuestionViewModel.swift in Sources */,
+				26D343482877811300960CC3 /* CategoriesViewModel.swift in Sources */,
 				26422CA42868A3CD0093EC3F /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
